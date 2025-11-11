@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>ADRIPIXELS</title>
+    </head>
+    <body>
+        <header>
+            <img src="/Invitacion/img/heart.png" alt="Undertale Heart" class="heart">
+            <h1 class="encabezado1">ADRIPIXELS</h1>
+            <img src="/Invitacion/img/heart.png" alt="Undertale Heart" class="heart">
+         </header>
+
+
+         <section class="text-space" id="MusicSection">
+            <p id="instrucción" class="efecto-typing text">* Aquí empieza la aventura, ¡Dale play a la música para saber más!</p>
+            <audio controls loop id="musica">
+                <source src="/Invitacion/music/UndertaleSoundtrack.mp3" type="audio/mpeg">
+                Tu navegador no es compatible con el audio MP3.
+            </audio>
+         </section>
+
+         <section class="text-space hide" id="CountdownSection">
+            <p id="headline" class="efecto-typing text-CR">FALTAN</p>
+            <div id="countdown" class="countdown">
+                <ul>
+                    <li class="tiempo"><span id="days">00</span>días</li>
+                    <li class="tiempo"><span id="hours">00</span>horas</li>
+                    <li class="separador">:</li>
+                    <li class="tiempo"><span id="minutes">00</span>minutos</li>
+                    <li class="separador">:</li>
+                    <li class="tiempo"><span id="seconds">00</span>segundos</li>
+                </ul>
+            </div>
+            <p id="headline2" class="efecto-typing text-CR">PARA EL ESTRENO DEL PRIMER VIDEO</p>
+            </section>
+
+         <section class="text-space hide" id="WelcomeSection">
+           <p id="WelcomeText" class="efecto-typing text">* Estás cordialmente invitada/o a la apertura de mi canal de Youtube, en el podrás encontrar gameplays, vlogs y muchas cosas más.<br>
+            ¡Suscribete para unirte a la aventura!</p>
+            <div class="botones">
+                <button onclick="efecto.play()" id="open" class="btn">SUSCRIBETE</button>
+                <div class="modal-container" id="modal-container">
+                    <div class="confetti-overlay" id="confetti-overlay">
+                        <img src="/Invitacion/img/Confetti.gif" alt="Confeti" class="confetti-gif">
+                    </div>
+                    <div class="modal">
+                        <h2>¡GRACIAS POR SUSCRIBIRTE!</h2>
+                        <p>Ahora no te perderas de ningún video</p>
+                        <button id="closebtn">CERRAR</button>
+                    </div>
+                </div>
+                <a href="/Invitacion/Formulario.html" class="btn">CONFIRMAR ASISTENCIA</a>
+            </div>
+         </section>
+
+         <section class="text-space hide" id="VideoSection">
+           <p id="videoTrailer" class="efecto-typing text">* Mira el trailer para mi canal aquí.</p>
+           <div class="contenedor-video">
+           <iframe width="914" height="514" src="https://www.youtube.com/embed/1Hojv0m3TqA" title="UNDERTALE Release Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+           </div>
+        </section>
+
+        <section class="text-space hide" id="SocialMediaSection">
+            <p class="efecto-typing text"> * ¡Sigueme en todas mis redes sociales!</p>
+            <div class="social-links">
+                  <a href="https://www.youtube.com/@adrianaleon1236" target="_blank" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+                  <a href="https://www.twitch.tv/arcanefairy4" target="_blank" aria-label="Twitch"><i class="fab fa-twitch"></i></a>
+                  <a href="https://x.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                  <a href="https://github.com/arcanefairy" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+        </section>
+
+        <footer>
+            <p>2025© ADRIANA LEON CAMACHO<br>
+            Todos los derechos reservados.
+            Este sitio fue creado con fines educativos.</p>
+        </footer>
+    </body>
+    <script src="efectos.js" defer></script>
+</html>

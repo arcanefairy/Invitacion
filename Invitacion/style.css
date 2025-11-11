@@ -1,0 +1,374 @@
+@font-face {
+  font-family: 'Determination';
+  src: url('fonts/DeterminationMono.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Mercy';
+  src: url('fonts/mercy.otf') format('truetype');
+}
+
+body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    font-family: 'Determination', monospace;
+    image-rendering: pixelated;
+    background-image: url('/Invitacion/img/background.jpg');
+    background-repeat: no-repeat; 
+    background-position: right bottom; 
+    background-attachment: fixed; 
+    background-size: 85px
+}
+
+.encabezado1 {
+    font-size: 70px;
+    text-align: center;
+}
+
+.encabezado1:hover {
+    color: #FF0;
+}
+
+header {
+  background-color: black;
+  margin-top: -5px;
+  display: flex;
+  justify-content:space-between; /* Distribuye el espacio entre los elementos */
+  align-items: center;
+}
+
+.heart {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+.text {
+  padding: 6px;
+  margin-left: 8px;
+  font-size: 25px;
+  text-align: justify;
+}
+
+.text-CR {
+  padding: 6px;
+  margin-left: 8px;
+  font-size: 24px;
+  text-align: center;
+  color: #FF0;
+}
+
+.text-space {
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+  border: 3px solid white;
+  background-color: black;
+}
+
+audio {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -5px;
+    max-width: 400px;
+    border-radius: 10px;
+    background-color: #ffdd1f;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+section {
+  flex-direction: column;
+  margin-bottom: 25px;
+  transition: opacity 0.5s ease-out, 
+  max-height 0.5s ease-out, 
+  margin-bottom 0.5s ease-out,
+  padding 0.5s ease-out,
+  border-width 0.5s ease-out;
+  overflow: hidden;
+}
+
+.hide {
+  opacity: 0;
+  max-height: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-width: 0;
+}
+
+.tiempo {
+  font-family: 'Determination', monospace;
+  color: white;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+}
+
+ul li {
+  list-style-type: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+li span {
+  display: block;
+  font-size: 6rem;
+  color: #FF0;
+}
+
+li.separador {
+  margin: 0 10px;
+  font-size: 6rem;
+  color: #FF0;
+}
+
+li:first-of-type {
+  margin-right: 5rem;
+}
+
+.contenedor-video {
+    position: relative;
+    padding-bottom: 36.25%;
+    height: 0;
+    overflow: hidden;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.contenedor-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+  font-family: 'Determination', monospace;
+  color: white;
+  text-align: center;
+  font-size: 19px;
+  text-shadow: 2px 2px 2px #050505;
+}
+
+.botones {
+  display: flex;
+  justify-content:space-evenly; /* Distribuye el espacio entre los elementos */
+  align-items: center;
+  padding: 2%;
+  margin-top: -10px;
+}
+
+.btn {
+    text-align: center;
+    font-family: 'Mercy', monospace;
+    font-size: 20px;
+    color: #FF0;
+    background-color: black;
+    text-decoration: none;   
+    display: inline-block; 
+    padding: 10px 20px;   
+    border: 4px solid #FF0; 
+    position: relative;
+    margin: 10px 15px; 
+    transition: color 0.2s ease, border-color 0.2s ease, padding-left 0.2s ease-in-out;
+}
+
+.btn::before {
+    content: ''; 
+    background-image: url('/Invitacion/img/heart.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* Tamaño del corazón */
+    width: 20px;
+    height: 20px;
+    
+    /* Posición (a la izquierda) */
+    position: absolute;
+    left: 20px; 
+    top: 50%;
+    transform: translateY(-50%); 
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.btn:hover {
+    color: #eb6919;      
+    border-color: #eb6919;
+    padding-left: 50px
+}
+
+.btn:hover::before {
+    opacity: 1; 
+}
+
+.decision {
+  display: flex;
+  justify-content:space-evenly; /* Distribuye el espacio entre los elementos */
+  align-items: center;
+  padding: 2%;
+  margin-top: -20px;
+}
+
+.btn-decision {
+  font-size: 25px;
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+
+.btn-decision::before {
+    content: ''; 
+    background-image: url('/Invitacion/img/heart.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 100%; 
+    margin-right: 10px; 
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.btn-decision:hover {
+  color:#FF0;
+}
+
+.btn-decision:hover::before {
+    opacity: 1; 
+}
+
+
+.formulario {
+  display: flex;
+  padding: 1rem;
+}
+
+.formulario input {
+  font-family: 'Determination', monospace;
+  font-size: 18px;
+  padding: 0.5rem;
+  width: 70%;
+}
+
+.input-left {
+  margin-left: 35px;
+}
+
+.modal-container {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  opacity: 0;
+  pointer-events: none;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0000008b;
+  z-index: 1000;
+}
+
+.modal-container.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.modal {
+  width: 70%;
+  padding: 20px 40px;
+  background-color: black;
+  border: 3px solid white;
+}
+
+.modal h2 {
+  text-align: center;
+  color: #eb6919;
+  font-size: 35px;
+}
+
+.modal button {
+    text-align: center;
+    font-family: 'Mercy', monospace;
+    font-size: 20px;
+    color: #FF0;
+    background-color: black;
+    text-decoration: none;   
+    display: inline-block; 
+    padding: 10px 20px;   
+    border: 4px solid #FF0; 
+    position: relative;
+    margin: 10px 15px; 
+}
+
+.modal button:hover {
+    color: #eb6919;      
+    border-color: #eb6919;
+}
+
+.modal p {
+  font-size: 25px;
+  text-align: center;
+}
+
+.confetti-overlay {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: -1; 
+    opacity: 0; 
+    transition: opacity 0.3s ease-in-out;
+}
+
+.confetti-overlay.show-confetti {
+    opacity: 1; 
+}
+
+.confetti-gif {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+.social-links {
+    display: flex;
+    justify-content:space-evenly; 
+    align-items: center;
+    padding: 2%;
+    margin-top: -15px;
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 35px; 
+    margin: 0 15px;  
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: scale(1.2); /* Efecto de zoom al pasar el mouse */
+    color: #FF0; /* Color suave al pasar el mouse */
+}

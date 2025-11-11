@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>ADRIPIXELS</title>
+    </head>
+    <body>
+        <header>
+            <img src="/Invitacion/img/heart.png" alt="Undertale Heart" class="heart">
+            <h1 class="encabezado1">ADRIPIXELS</h1>
+            <img src="/Invitacion/img/heart.png" alt="Undertale Heart" class="heart">
+         </header>
+
+
+         <section class="text-space" id="IntroSection">
+            <p id="instrucción" class="efecto-typing text">* Introduce tus datos para confirmar tu asistencia</p>
+         </section>
+
+         <section class="text-space" id="FormSection">
+            <div id="error"></div>
+            <form id="form">
+            <div class="formulario">
+            <label id="nombre" class="efecto-typing text">* Nombre completo:</label>
+            <input class="input-left" type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+            </div>
+            <div class="formulario">
+            <label id="correo" class="efecto-typing text">* Correo electrónico:</label>
+            <input type="email" id="coreo" name="correo" class="space-mail" placeholder="tucorreo@ejemplo.com" required>
+            </div>
+            <div class="decision">
+            <button onclick="efecto.play()" type="submit" class="btn space-btn">ENVIAR</button>
+            <button type="reset" class="btn space-btn">LIMPIAR</button>
+            </div>
+            </form>
+         </section>
+
+         <section class="text-space" id="BackSection">
+            <p id="continuar" class="efecto-typing text">* ¿Deseas regresar a la página de inicio?</p>
+            <div class="decision">
+                <a href="/Invitacion/Index.html" class="btn-decision">SI</a>
+                <a href="/Invitacion/Formulario.html" class="btn-decision">NO</a>
+            </div>
+         </section>
+
+        <footer>
+            <p>2025© ADRIANA LEON CAMACHO<br>
+            Todos los derechos reservados.
+            Este sitio fue creado con fines educativos.</p>
+        </footer>
+    </body>
+    <script src="efectos.js" defer></script>
+</html>
